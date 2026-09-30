@@ -113,7 +113,11 @@ An observed failure was an exact-looking quotation made by joining separated sou
 
 A useful next improvement is a claim-by-claim entailment and completeness review step with a separate approval record before presenting an answer as reviewed. This small model also needs tighter output budgeting and tested handling of source follow-ups in `/notes`; ordinary conversational follow-ups already retain context. Keyword retrieval can miss paraphrases. A local embedding reranker could be evaluated against a larger frozen question set without introducing a cloud dependency.
 
-## Publish and submit yourself
+## Publication and course submission
+
+Public repository: [tess-rubin/roman-empire-personal-wiki](https://github.com/tess-rubin/roman-empire-personal-wiki). Published and verified accessible without authentication. Course submission remains blocked: the supplied portal’s GitHub sign-in redirects to an authentication host that returned `DNS_PROBE_FINISHED_NXDOMAIN`. No submission receipt was obtained.
+
+For later updates or submission:
 
 1. Review [third-party notices](THIRD_PARTY_NOTICES.md). The restricted MIT HTML is excluded and obtained directly during setup. Inspect all shareable files and remove private material. The supplied `.docx`, model weights, dependencies, credentials and Obsidian workspace state are ignored. Do not use `git add .` until the publication check is complete.
 2. Create your own empty **public** GitHub repository. In this folder, check `git status --short`; add the reviewed code, README, config, instructions, evaluation, mappings, shareable originals/notes and results. Commit, set the remote and push:
