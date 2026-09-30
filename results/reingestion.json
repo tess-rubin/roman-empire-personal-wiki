@@ -1,0 +1,200 @@
+{
+  "unchanged": true,
+  "before": {
+    "files": {
+      "vault/index.md": "facf4c09b3d6ff9737e6fa4d5017b72b1d0b6f60d789588c159877231c648daa",
+      "vault/raw/pliny.html": "6c45c244c2e553fe8cde038856814442a02d2dd64bf8d9ab221c7e878639ee32",
+      "vault/raw/tacitus.html": "76f74ae95a06014e38b4728e2d6a43f48a8ef1f3d36e20da759e3ea5ad1023d0",
+      "vault/raw/augustus.html": "93e505b75436e0b4af71e35b587ea30fb7fdfefc1174e4b8e9a21f040a4d5675",
+      "vault/wiki/Government/Augustan Diplomacy.md": "58fa8badf3e36301f275f503fa18c7d58e3ca40eb44420d9090ca46b4c991264",
+      "vault/wiki/Government/Provincial Oversight.md": "f4f26e1a3144b03cf55f063be769b683b957ed0a508b812b04703ed7b1818e2b",
+      "vault/wiki/Emperors/Augustan Authority.md": "d81e584ba265f01e49c16da26816bfa87afe2092148370bb61e2a524498e7875",
+      "vault/wiki/Cities/Nicomedia Aqueduct.md": "a1a84b295409db4fe7e53c1a774f813f87d7620ad33871375a956f512621aa60",
+      "vault/wiki/Cities/Rebuilding Rome.md": "8ed48ba8d0adee2860b8b9cc68a5bf77409a3d763ed0158207ce05fa7cd17132",
+      "vault/wiki/Cities/Imperial Public Works.md": "5c030694434f8dcba6d3db7da6759b3c8bed9b5b7d6b8b94f1f224451b2fd36e",
+      "vault/wiki/Cities/Great Fire of Rome.md": "da625006e7057e73bea30a0e35657722b7a525f140b978eedd9434673789276e"
+    },
+    "note_paths": {
+      "augustan-authority": "vault/wiki/Emperors/Augustan Authority.md",
+      "augustan-diplomacy": "vault/wiki/Government/Augustan Diplomacy.md",
+      "imperial-public-works": "vault/wiki/Cities/Imperial Public Works.md",
+      "great-fire": "vault/wiki/Cities/Great Fire of Rome.md",
+      "rebuilding": "vault/wiki/Cities/Rebuilding Rome.md",
+      "provincial-oversight": "vault/wiki/Government/Provincial Oversight.md",
+      "nicomedia": "vault/wiki/Cities/Nicomedia Aqueduct.md"
+    }
+  },
+  "after": {
+    "files": {
+      "vault/index.md": "facf4c09b3d6ff9737e6fa4d5017b72b1d0b6f60d789588c159877231c648daa",
+      "vault/raw/pliny.html": "6c45c244c2e553fe8cde038856814442a02d2dd64bf8d9ab221c7e878639ee32",
+      "vault/raw/tacitus.html": "76f74ae95a06014e38b4728e2d6a43f48a8ef1f3d36e20da759e3ea5ad1023d0",
+      "vault/raw/augustus.html": "93e505b75436e0b4af71e35b587ea30fb7fdfefc1174e4b8e9a21f040a4d5675",
+      "vault/wiki/Government/Augustan Diplomacy.md": "58fa8badf3e36301f275f503fa18c7d58e3ca40eb44420d9090ca46b4c991264",
+      "vault/wiki/Government/Provincial Oversight.md": "f4f26e1a3144b03cf55f063be769b683b957ed0a508b812b04703ed7b1818e2b",
+      "vault/wiki/Emperors/Augustan Authority.md": "d81e584ba265f01e49c16da26816bfa87afe2092148370bb61e2a524498e7875",
+      "vault/wiki/Cities/Nicomedia Aqueduct.md": "a1a84b295409db4fe7e53c1a774f813f87d7620ad33871375a956f512621aa60",
+      "vault/wiki/Cities/Rebuilding Rome.md": "8ed48ba8d0adee2860b8b9cc68a5bf77409a3d763ed0158207ce05fa7cd17132",
+      "vault/wiki/Cities/Imperial Public Works.md": "5c030694434f8dcba6d3db7da6759b3c8bed9b5b7d6b8b94f1f224451b2fd36e",
+      "vault/wiki/Cities/Great Fire of Rome.md": "da625006e7057e73bea30a0e35657722b7a525f140b978eedd9434673789276e"
+    },
+    "note_paths": {
+      "augustan-authority": "vault/wiki/Emperors/Augustan Authority.md",
+      "augustan-diplomacy": "vault/wiki/Government/Augustan Diplomacy.md",
+      "imperial-public-works": "vault/wiki/Cities/Imperial Public Works.md",
+      "great-fire": "vault/wiki/Cities/Great Fire of Rome.md",
+      "rebuilding": "vault/wiki/Cities/Rebuilding Rome.md",
+      "provincial-oversight": "vault/wiki/Government/Provincial Oversight.md",
+      "nicomedia": "vault/wiki/Cities/Nicomedia Aqueduct.md"
+    }
+  },
+  "runs": [
+    {
+      "mode": "ingest",
+      "source": "augustus",
+      "sha256": "93e505b75436e0b4af71e35b587ea30fb7fdfefc1174e4b8e9a21f040a4d5675",
+      "staged": [],
+      "passages": 8,
+      "wall_seconds": 0.012659667001571506,
+      "before": {
+        "time": 1790745037.4233432,
+        "python_rss": 34193408,
+        "system": {
+          "total": 17179869184,
+          "available": 5790121984,
+          "percent": 66.3,
+          "used": 9142517760,
+          "free": 121225216,
+          "active": 5690245120,
+          "inactive": 5610635264,
+          "wired": 3452272640
+        },
+        "swap": null,
+        "ollama_processes": [],
+        "measurement_errors": [
+          "Process memory unavailable: [Errno 1] Operation not permitted (originated from sysctl(KERN_PROC_ALL))",
+          "swap unavailable: [Errno 1] Operation not permitted"
+        ]
+      },
+      "after": {
+        "time": 1790745037.4360142,
+        "python_rss": 35897344,
+        "system": {
+          "total": 17179869184,
+          "available": 5793333248,
+          "percent": 66.3,
+          "used": 9144631296,
+          "free": 122257408,
+          "active": 5692358656,
+          "inactive": 5611339776,
+          "wired": 3452272640
+        },
+        "swap": null,
+        "ollama_processes": [],
+        "measurement_errors": [
+          "Process memory unavailable: [Errno 1] Operation not permitted (originated from sysctl(KERN_PROC_ALL))",
+          "swap unavailable: [Errno 1] Operation not permitted"
+        ]
+      },
+      "record_path": "results/runs/20260929T221037-1adbc5b7.json"
+    },
+    {
+      "mode": "ingest",
+      "source": "pliny",
+      "sha256": "6c45c244c2e553fe8cde038856814442a02d2dd64bf8d9ab221c7e878639ee32",
+      "staged": [],
+      "passages": 6,
+      "wall_seconds": 0.04264091595541686,
+      "before": {
+        "time": 1790745037.436523,
+        "python_rss": 35913728,
+        "system": {
+          "total": 17179869184,
+          "available": 5793628160,
+          "percent": 66.3,
+          "used": 9144680448,
+          "free": 122503168,
+          "active": 5692407808,
+          "inactive": 5611339776,
+          "wired": 3452272640
+        },
+        "swap": null,
+        "ollama_processes": [],
+        "measurement_errors": [
+          "Process memory unavailable: [Errno 1] Operation not permitted (originated from sysctl(KERN_PROC_ALL))",
+          "swap unavailable: [Errno 1] Operation not permitted"
+        ]
+      },
+      "after": {
+        "time": 1790745037.4791749,
+        "python_rss": 44744704,
+        "system": {
+          "total": 17179869184,
+          "available": 5790482432,
+          "percent": 66.3,
+          "used": 9148350464,
+          "free": 113229824,
+          "active": 5696651264,
+          "inactive": 5616009216,
+          "wired": 3451699200
+        },
+        "swap": null,
+        "ollama_processes": [],
+        "measurement_errors": [
+          "Process memory unavailable: [Errno 1] Operation not permitted (originated from sysctl(KERN_PROC_ALL))",
+          "swap unavailable: [Errno 1] Operation not permitted"
+        ]
+      },
+      "record_path": "results/runs/20260929T221037-a22eeca7.json"
+    },
+    {
+      "mode": "ingest",
+      "source": "tacitus",
+      "sha256": "76f74ae95a06014e38b4728e2d6a43f48a8ef1f3d36e20da759e3ea5ad1023d0",
+      "staged": [],
+      "passages": 10,
+      "wall_seconds": 0.014011874969583005,
+      "before": {
+        "time": 1790745037.479549,
+        "python_rss": 44744704,
+        "system": {
+          "total": 17179869184,
+          "available": 5790482432,
+          "percent": 66.3,
+          "used": 9148350464,
+          "free": 113229824,
+          "active": 5696651264,
+          "inactive": 5616009216,
+          "wired": 3451699200
+        },
+        "swap": null,
+        "ollama_processes": [],
+        "measurement_errors": [
+          "Process memory unavailable: [Errno 1] Operation not permitted (originated from sysctl(KERN_PROC_ALL))",
+          "swap unavailable: [Errno 1] Operation not permitted"
+        ]
+      },
+      "after": {
+        "time": 1790745037.493571,
+        "python_rss": 46858240,
+        "system": {
+          "total": 17179869184,
+          "available": 5790482432,
+          "percent": 66.3,
+          "used": 9148350464,
+          "free": 113229824,
+          "active": 5696651264,
+          "inactive": 5616009216,
+          "wired": 3451699200
+        },
+        "swap": null,
+        "ollama_processes": [],
+        "measurement_errors": [
+          "Process memory unavailable: [Errno 1] Operation not permitted (originated from sysctl(KERN_PROC_ALL))",
+          "swap unavailable: [Errno 1] Operation not permitted"
+        ]
+      },
+      "record_path": "results/runs/20260929T221037-e90f535c.json"
+    }
+  ]
+}

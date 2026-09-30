@@ -1,0 +1,18 @@
+ASK: According to Augustus, how did his power compare with his colleagues after his sixth and seventh consulships?
+After his sixth and seventh consulships, Augustus transferred the republic from his own control to the will of the senate and the Roman people, receiving the title of Augustus by decree of the senate, and his power was limited to those who were his colleagues in any magistracy.
+  [augustus:34:1] vault/raw/augustus.html#34
+  “In my sixth and seventh consulships, when I had extinguished the flames of civil war, after receiving by universal consent the absolute control of affairs, I transferred the republic from my own control to the will of the senate and the Roman people. For this service on my part I was given the title of Augustus by decree of the senate, and the doorposts of my house were covered with laurels by public act, and a civic crown was fixed above my door, and a golden shield was placed in the Curia Julia whose inscription testified that the senate and the Roman people gave me this in recognition of my valour, my clemency, my justice, and my piety. After that time I took precedence of all in rank, but of power I possessed no more than those who were my colleagues in any magistracy.”
+ASK: How did Nero help people left homeless by Rome’s fire?
+To relieve the people driven out homeless, Nero threw open public spaces and buildings, and raised temporary structures for the destitute multitude.
+  [tacitus:39:1] vault/raw/tacitus.html#681
+  “However, to relieve the people, driven out homeless as they were, he threw open to them the Campus Martius and the public buildings of Agrippa, and even his own gardens, and raised temporary structures to receive the destitute multitude.”
+Supplies of food were brought from Ostia and neighboring towns, and the price of corn was reduced to three sesterces a peck.
+  [tacitus:39:1] vault/raw/tacitus.html#681
+  “Supplies of food were brought up from Ostia and the neighbouring towns, and the price of corn was reduced to three sesterces a peck.”
+Nero promised to erect colonnades at his own expense and to hand over open spaces to ground landlords when cleared of debris.
+  [tacitus:43:1] vault/raw/tacitus.html#739
+  “These colonnades Nero promised to erect at his own expense, and to hand over the open spaces, when cleared of the debris, to the ground landlords.”
+He fixed on the marshes of Ostia for the reception of rubbish and arranged for ships bringing corn by the Tiber to sail down the river with cargoes of this rubbish.
+  [tacitus:43:1] vault/raw/tacitus.html#739
+  “He fixed on the marshes of Ostia for the reception of the rubbish, and arranged that the ships which had brought up corn by the Tiber, should sail down the river with cargoes of this rubbish.”
+EVIDENCE: <LOCAL_HOME>/Documents/ChatGPT/Assignment 4/results/connected-retry-20260929T165833

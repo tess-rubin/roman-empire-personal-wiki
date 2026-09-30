@@ -1,0 +1,1 @@
+Error: Invalid draft for Rebuilding Rome: Invalid supporting quotation: not a verbatim substring of the retrieved passage.

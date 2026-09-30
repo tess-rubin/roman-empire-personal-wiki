@@ -1,0 +1,7 @@
+{
+  "active_nonloopback_ip_interfaces": [
+    "en0"
+  ],
+  "default_route_interface": "en0",
+  "offline": false
+}

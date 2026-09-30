@@ -1,0 +1,22 @@
+[
+  {
+    "id": "augustus",
+    "expected_sections": [
+      "augustus:34"
+    ],
+    "retrieval_recall_pass": true,
+    "expected_behavior": "Distinguish claimed precedence in rank from equal magistrates\u2019 power.",
+    "claim_review": "PENDING: compare each claim with its quoted evidence",
+    "status_check": true
+  },
+  {
+    "id": "nero",
+    "expected_sections": [
+      "tacitus:39"
+    ],
+    "retrieval_recall_pass": false,
+    "expected_behavior": "Shelter, temporary accommodation, food supplies, reduced grain price.",
+    "claim_review": "PENDING: compare each claim with its quoted evidence",
+    "status_check": true
+  }
+]

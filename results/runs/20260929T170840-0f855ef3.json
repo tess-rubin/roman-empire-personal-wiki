@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-30T00:08:40.547981+00:00",
+  "execution": "local",
+  "mode": "ask",
+  "status": "error",
+  "error": "Local Gemma unavailable at http://127.0.0.1:11435. Run scripts/start_ollama.sh; download weights explicitly during setup. No cloud fallback. (<urlopen error [Errno 61] Connection refused>)",
+  "arguments": {
+    "command": "ask",
+    "question": "Nicomedia aqueduct",
+    "mode": "local"
+  }
+}

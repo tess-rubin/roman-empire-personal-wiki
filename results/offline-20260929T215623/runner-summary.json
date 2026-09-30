@@ -1,0 +1,22 @@
+{
+  "continuous_offline": true,
+  "network_sample_count": 101,
+  "exit_codes": {
+    "ingest": 0,
+    "eval": 0,
+    "unit": 0,
+    "stopped_search": 0,
+    "stopped_ask": 2
+  },
+  "network_before": {
+    "active_nonloopback_ip_interfaces": [],
+    "default_route_interface": null,
+    "offline": true
+  },
+  "network_after": {
+    "active_nonloopback_ip_interfaces": [],
+    "default_route_interface": null,
+    "offline": true
+  },
+  "claim_review": "PENDING independent assessment"
+}

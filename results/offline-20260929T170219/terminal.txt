@@ -1,0 +1,581 @@
++ .venv/bin/python scripts/network_state.py
++ cat results/offline-20260929T170219/network-before.json
+{
+  "active_nonloopback_ip_interfaces": [],
+  "default_route_interface": null,
+  "offline": true
+}
++ .venv/bin/python -c 'from scripts.network_state import state; import sys; sys.exit(not state()["offline"])'
+++ /usr/sbin/lsof -tiTCP:11435 -sTCP:LISTEN
++ PID=24010
++ '[' -n 24010 ']'
++ kill 24010
++ sleep 3
++ SERVER_PID=25873
++ trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
++ sleep 5
++ scripts/start_ollama.sh
++ ./wiki help
+usage: wiki [-h] {help,ask,search,chat,ingest,review,rename} ...
+
+Roman Empire study buddy and local source research. Model: gemma4:e2b-it-qat;
+loopback-only Ollama on port 11435.
+
+positional arguments:
+  {help,ask,search,chat,ingest,review,rename}
+    help                Show setup, commands and limitations
+    ask                 Independent cited research
+    search              Original passages; no model required
+    chat                Conversational study buddy; /notes QUESTION for
+                        evidence, /quit to exit
+    ingest              Preserve known originals, generate review drafts,
+                        update FTS index
+    review              Accept a staged draft after checking its claims
+                        against sources
+    rename              Rename a reviewed note and update incoming
+                        links/mappings
+
+options:
+  -h, --help            show this help message and exit
+
+Setup: scripts/start_ollama.sh, then explicitly pull weights while connected.
+Offline setup: pip install --no-index --find-links vendor -r requirements.txt.
+Errors distinguish missing originals, empty evidence, invalid citations and
+runtime failures. See README.md. Citation checks do not establish historical
+truth.
++ .venv/bin/python -
+{
+  "baseline": {
+    "time": 1790726548.447593,
+    "python_rss": 27541504,
+    "system": {
+      "total": 17179869184,
+      "available": 6527320064,
+      "percent": 62.0,
+      "used": 6662832128,
+      "free": 3482353664,
+      "active": 3063414784,
+      "inactive": 2771189760,
+      "wired": 3599417344
+    },
+    "swap": {
+      "total": 9663676416,
+      "used": 8005025792,
+      "free": 1658650624,
+      "percent": 82.8,
+      "sin": 1608434991104,
+      "sout": 29790093312
+    },
+    "ollama_processes": [
+      {
+        "pid": 25873,
+        "name": "ollama",
+        "rss": 27099136
+      },
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 8830976
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 10616832
+      }
+    ]
+  },
+  "model": {
+    "model": {
+      "name": "gemma4:e2b-it-qat",
+      "model": "gemma4:e2b-it-qat",
+      "modified_at": "2026-09-29T16:50:18.049016532-07:00",
+      "size": 4336358185,
+      "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "4.6B",
+        "quantization_level": "Q4_0",
+        "context_length": 131072,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    },
+    "runtime": {
+      "version": "0.34.3"
+    },
+    "show": {
+      "thinking": {
+        "values": [
+          false,
+          true
+        ],
+        "default": true
+      },
+      "license": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n",
+      "modelfile": "# Modelfile generated by \"ollama show\"\n# To build a new Modelfile based on this, replace FROM with:\n# FROM gemma4:e2b-it-qat\n\nFROM <LOCAL_HOME>/Documents/ChatGPT/Assignment 4/.ollama/models/blobs/sha256-3646b4c147cd235a44d91df1546d3b7d8e29b547dbe4e1f80856419aa455e6fd\nFROM <LOCAL_HOME>/Documents/ChatGPT/Assignment 4/.ollama/models/blobs/sha256-58c187648007cab392bd5678b87e862c3e8794017deb945feea2cf256195e96a\nTEMPLATE {{ .Prompt }}\nRENDERER gemma4\nPARSER gemma4\nPARAMETER temperature 1\nPARAMETER top_k 64\nPARAMETER top_p 0.95\nLICENSE \"\"\"\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\"\"\"\n",
+      "parameters": "top_k                          64\ntop_p                          0.95\ntemperature                    1",
+      "template": "{{ .Prompt }}",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "4.6B",
+        "quantization_level": "Q4_0"
+      },
+      "model_info": {
+        "gemma4.attention.head_count": 8,
+        "gemma4.attention.head_count_kv": 1,
+        "gemma4.attention.key_length": 512,
+        "gemma4.attention.key_length_swa": 256,
+        "gemma4.attention.layer_norm_rms_epsilon": 1e-06,
+        "gemma4.attention.shared_kv_layers": 20,
+        "gemma4.attention.sliding_window": 512,
+        "gemma4.attention.sliding_window_pattern": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "gemma4.attention.value_length": 512,
+        "gemma4.attention.value_length_swa": 256,
+        "gemma4.block_count": 35,
+        "gemma4.context_length": 131072,
+        "gemma4.embedding_length": 1536,
+        "gemma4.embedding_length_per_layer_input": 256,
+        "gemma4.feed_forward_length": [
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          6144,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288,
+          12288
+        ],
+        "gemma4.final_logit_softcapping": 30,
+        "gemma4.rope.dimension_count": 512,
+        "gemma4.rope.dimension_count_swa": 256,
+        "gemma4.rope.freq_base": 1000000,
+        "gemma4.rope.freq_base_swa": 10000,
+        "general.architecture": "gemma4",
+        "general.file_type": 2,
+        "general.finetune": "2B_dequant_qat_it_hf",
+        "general.parameter_count": 4628569635,
+        "general.quantization_version": 2,
+        "general.sampling.temp": 1,
+        "general.sampling.top_k": 64,
+        "general.sampling.top_p": 0.95,
+        "general.size_label": "4.6B",
+        "general.type": "model",
+        "tokenizer.ggml.add_bos_token": true,
+        "tokenizer.ggml.add_space_prefix": false,
+        "tokenizer.ggml.bos_token_id": 2,
+        "tokenizer.ggml.eos_token_id": 1,
+        "tokenizer.ggml.mask_token_id": 4,
+        "tokenizer.ggml.merges": [],
+        "tokenizer.ggml.model": "gemma4",
+        "tokenizer.ggml.padding_token_id": 0,
+        "tokenizer.ggml.scores": [],
+        "tokenizer.ggml.token_type": [],
+        "tokenizer.ggml.tokens": [],
+        "tokenizer.ggml.unknown_token_id": 3
+      },
+      "projector_info": {
+        "clip.audio.attention.head_count": 8,
+        "clip.audio.attention.layer_norm_epsilon": 1e-05,
+        "clip.audio.block_count": 12,
+        "clip.audio.embedding_length": 1024,
+        "clip.audio.feed_forward_length": 4096,
+        "clip.audio.num_mel_bins": 128,
+        "clip.audio.projection_dim": 1536,
+        "clip.audio.projector_type": "gemma4a",
+        "clip.has_audio_encoder": true,
+        "clip.has_vision_encoder": true,
+        "clip.vision.attention.head_count": 12,
+        "clip.vision.attention.layer_norm_epsilon": 1e-06,
+        "clip.vision.block_count": 16,
+        "clip.vision.embedding_length": 768,
+        "clip.vision.feed_forward_length": 3072,
+        "clip.vision.image_mean": [
+          0,
+          0,
+          0
+        ],
+        "clip.vision.image_size": 224,
+        "clip.vision.image_std": [
+          1,
+          1,
+          1
+        ],
+        "clip.vision.patch_size": 16,
+        "clip.vision.projection_dim": 1536,
+        "clip.vision.projector_type": "gemma4v",
+        "general.architecture": "clip",
+        "general.file_type": 32,
+        "general.finetune": "2B_dequant_qat_it_hf",
+        "general.name": "2B_dequant_qat_it_hf",
+        "general.parameter_count": 475729088,
+        "general.quantization_version": 2,
+        "general.sampling.temp": 1,
+        "general.sampling.top_k": 64,
+        "general.sampling.top_p": 0.95,
+        "general.size_label": "476M",
+        "general.type": "mmproj"
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ],
+      "modified_at": "2026-09-29T16:50:18.049016532-07:00",
+      "requires": "0.30.5"
+    }
+  }
+}
++ ./wiki ask 'According to Augustus, how did his power compare with his colleagues after his sixth and seventh consulships?'
+According to Augustus, after his sixth and seventh consulships, he transferred the republic from his own control to the will of the senate and the Roman people.
+  [augustus:34:1] vault/raw/augustus.html#34
+  “In my sixth and seventh consulships, when I had extinguished the flames of civil war, after receiving by universal consent the absolute control of affairs, I transferred the republic from my own control to the will of the senate and the Roman people.”
+According to Augustus, for the service of extinguishing civil war and receiving universal consent, he was given the title of Augustus by decree of the senate, and his house was adorned with honors.
+  [augustus:34:1] vault/raw/augustus.html#34
+  “For this service on my part I was given the title of Augustus by decree of the senate, and the doorposts of my house were covered with laurels by public act, and a civic crown was fixed above my door, and a golden shield was placed in the Curia Julia whose inscription testified that the senate and the Roman people gave me this in recognition of my valour, my clemency, my justice, and my piety.”
+According to Augustus, after that time, he took precedence in rank but possessed no more power than those who were his colleagues in any magistracy.
+  [augustus:34:1] vault/raw/augustus.html#34
+  “After that time I took precedence of all in rank, but of power I possessed no more than those who were my colleagues in any magistracy.”
+Saved: results/runs/20260929T170312-13909c32.json
++ ./wiki ask 'According to Augustus, how did his power compare with his colleagues after his sixth and seventh consulships?'
+According to Augustus, after his sixth and seventh consulships, he transferred the republic from his own control to the will of the senate and the Roman people.
+  [augustus:34:1] vault/raw/augustus.html#34
+  “In my sixth and seventh consulships, when I had extinguished the flames of civil war, after receiving by universal consent the absolute control of affairs, I transferred the republic from my own control to the will of the senate and the Roman people.”
+According to Augustus, for the service of extinguishing civil war and receiving universal consent, he was given the title of Augustus by decree of the senate, and his house was adorned with honors.
+  [augustus:34:1] vault/raw/augustus.html#34
+  “For this service on my part I was given the title of Augustus by decree of the senate, and the doorposts of my house were covered with laurels by public act, and a civic crown was fixed above my door, and a golden shield was placed in the Curia Julia whose inscription testified that the senate and the Roman people gave me this in recognition of my valour, my clemency, my justice, and my piety.”
+According to Augustus, after that time, he took precedence in rank but possessed no more power than those who were his colleagues in any magistracy.
+  [augustus:34:1] vault/raw/augustus.html#34
+  “After that time I took precedence of all in rank, but of power I possessed no more than those who were my colleagues in any magistracy.”
+Saved: results/runs/20260929T170355-265ee684.json
++ ./wiki ingest vault/raw/pliny.html
+{
+  "mode": "ingest",
+  "source": "pliny",
+  "sha256": "6c45c244c2e553fe8cde038856814442a02d2dd64bf8d9ab221c7e878639ee32",
+  "staged": [
+    "data/staging/provincial-oversight.md",
+    "data/staging/nicomedia.md"
+  ],
+  "passages": 6,
+  "wall_seconds": 68.4669930000091,
+  "before": {
+    "time": 1790726648.170905,
+    "python_rss": 32522240,
+    "system": {
+      "total": 17179869184,
+      "available": 1914077184,
+      "percent": 88.9,
+      "used": 10244276224,
+      "free": 61227008,
+      "active": 1859305472,
+      "inactive": 1675329536,
+      "wired": 8384970752
+    },
+    "swap": {
+      "total": 7516192768,
+      "used": 6715211776,
+      "free": 800980992,
+      "percent": 89.3,
+      "sin": 1616023797760,
+      "sout": 29809557504
+    },
+    "ollama_processes": [
+      {
+        "pid": 25873,
+        "name": "ollama",
+        "rss": 7307264
+      },
+      {
+        "pid": 25898,
+        "name": "llama-server",
+        "rss": 4344479744
+      },
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 6438912
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 1376256
+      }
+    ]
+  },
+  "after": {
+    "time": 1790726715.813864,
+    "python_rss": 26329088,
+    "system": {
+      "total": 17179869184,
+      "available": 2045607936,
+      "percent": 88.1,
+      "used": 10347282432,
+      "free": 72237056,
+      "active": 1974468608,
+      "inactive": 1943912448,
+      "wired": 8372813824
+    },
+    "swap": {
+      "total": 7516192768,
+      "used": 6648102912,
+      "free": 868089856,
+      "percent": 88.5,
+      "sin": 1617198039040,
+      "sout": 29826744320
+    },
+    "ollama_processes": [
+      {
+        "pid": 25873,
+        "name": "ollama",
+        "rss": 21200896
+      },
+      {
+        "pid": 25898,
+        "name": "llama-server",
+        "rss": 4550656000
+      },
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 13828096
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 2637824
+      }
+    ]
+  },
+  "record_path": "results/runs/20260929T170515-40ab429e.json"
+}
++ INGEST_STATUS=0
++ .venv/bin/python scripts/evaluate.py --label offline
+ASK: According to Augustus, how did his power compare with his colleagues after his sixth and seventh consulships?
+According to Augustus, after his sixth and seventh consulships, he transferred the republic from his own control to the will of the senate and the Roman people.
+  [augustus:34:1] vault/raw/augustus.html#34
+  “In my sixth and seventh consulships, when I had extinguished the flames of civil war, after receiving by universal consent the absolute control of affairs, I transferred the republic from my own control to the will of the senate and the Roman people.”
+According to Augustus, for the service of extinguishing civil war and receiving universal consent, he was given the title of Augustus by decree of the senate, and public acts recognized this with a civic crown and a golden shield.
+  [augustus:34:1] vault/raw/augustus.html#34
+  “For this service on my part I was given the title of Augustus by decree of the senate, and the doorposts of my house were covered with laurels by public act, and a civic crown was fixed above my door, and a golden shield was placed in the Curia Julia whose inscription testified that the senate and the Roman people gave me this in recognition of my valour, my clemency, my justice, and my piety.”
+According to Augustus, after that time, he took precedence of all in rank, but regarding power, he possessed no more than those who were his colleagues in any magistracy.
+  [augustus:34:1] vault/raw/augustus.html#34
+  “After that time I took precedence of all in rank, but of power I possessed no more than those who were my colleagues in any magistracy.”
+ASK: How did Nero help people left homeless by Rome’s fire?
+ERROR: Invalid supporting quotation: not a verbatim substring of the retrieved passage.
+ASK: Why did Pliny request an aqueduct specialist for Nicomedia, and what did Trajan require?
+Pliny requested an architect or someone skilled in waterworks construction because the previous attempts to build the aqueduct in Nicomedia had failed, and he believed a skilled person would be necessary for the new design to succeed.
+  [pliny:XLVI:1] vault/raw/pliny.html#link2H_4_0157
+  “But that this work may not meet with the same ill-success as the former, it will be necessary to send here an architect, or some one skilled in the construction of this kind of waterworks.”
+Pliny urged the recipient to examine the cause of the large sums spent on the aqueduct in Nicomedia to ensure the money was not wasted on private purposes, suggesting the recipient should perform this examination.
+  [pliny:XLVII:1] vault/raw/pliny.html#link2H_4_0158
+  “But really it is no less incumbent upon you to examine by whose misconduct it has happened that such large sums have been thrown away upon this, lest they apply the money to private purposes, and the aqueduct in question, like the preceding, should be begun, and afterwards left unfinished.”
+Trajan required the restoration of the aqueducts as part of the restoration of the Capitol and sacred buildings.
+  [augustus:S3:1] vault/raw/augustus.html#S3
+  “He restored the Capitol and sacred buildings to the number of eighty-two, the theatre of Pompey, the aqueducts, the Flaminian Way.”
+ASK: Exactly how many people died in Rome’s fire of 64 CE?
+ERROR: Invalid response schema: claims must be a list.
+CHAT: what can we do?
+Well, hello there! I'm Clio, your trusty Roman history study buddy. We can do quite a few things! 😊
+
+We can brainstorm ideas for essays, draft summaries of historical events, or even create study plans to get you ready for your exams. If you have a specific topic in mind, we can dive into it!
+
+For example, we could:
+
+*   **Draft** an outline for a paper on the Punic Wars.
+*   **Shorten** a long passage about Roman engineering.
+*   **Explain** a tricky concept, like the structure of a Roman legion.
+
+What are you studying right now? Tell me what's on your mind!
+CHAT: what can you help me with?
+I can help you with all your Roman history studies! Think of me as your enthusiastic study partner. 🏛️
+
+Here are some ideas:
+
+*   **Brainstorming:** Need ideas for an essay topic? We can come up with some catchy angles!
+*   **Drafting:** I can help you write summaries, introductions, or even practice answering potential exam questions.
+*   **Explaining Concepts:** If something is confusing—like the difference between the Republic and the Empire—I can break it down for you.
+*   **Study Plans:** We can map out a schedule to tackle your material efficiently.
+
+If you have a specific text or question, I can also use my tools to search for original sources or check my notes for you! What are you working on today?
+CHAT: Draft a three-sentence museum-trip invitation. My budget is $45.
+Here is a draft for your museum trip invitation:
+
+"Join me for an exciting day exploring the wonders of Roman history! We can visit the [Name of Museum] and see incredible artifacts for just under $45. Let's make some unforgettable history together!"
+
+How does that sound? We can tweak it if you want to mention a specific exhibit!
+CHAT: make that shorter
+Here is a shorter version:
+
+"Let's explore Roman history! We can visit the [Name of Museum] for under $45. Ready for an amazing trip?"
+
+Does that hit the mark?
+EVIDENCE: <LOCAL_HOME>/Documents/ChatGPT/Assignment 4/results/offline-20260929T170516
++ EVAL_STATUS=1
++ .venv/bin/python -m unittest discover -s tests -v
+test_chat_routing_and_context (test_core.SourceTests.test_chat_routing_and_context) ... ok
+test_citation_failures (test_core.SourceTests.test_citation_failures) ... ok
+test_empty_is_not_runtime_error (test_core.SourceTests.test_empty_is_not_runtime_error) ... ok
+test_fts_only_source_evidence (test_core.SourceTests.test_fts_only_source_evidence) ... ok
+test_sections_and_originals (test_core.SourceTests.test_sections_and_originals) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.618s
+
+OK
++ TEST_STATUS=0
++ kill 25873
++ wait 25873
++ ./wiki search 'Nicomedia aqueduct'
+[
+  {
+    "id": "pliny:XLVII:1",
+    "source": "pliny",
+    "section": "pliny:XLVII",
+    "path": "vault/raw/pliny.html#link2H_4_0158",
+    "text": "CARE must be taken to supply the city of Nicomedia with water; and that business, I am well persuaded, you will perform with all the diligence you ought. But really it is no less incumbent upon you to examine by whose misconduct it has happened that such large sums have been thrown away upon this, lest they apply the money to private purposes, and the aqueduct in question, like the preceding, should be begun, and afterwards left unfinished. You will let me know the result of your inquiry.",
+    "score": -5.8907922292107475
+  },
+  {
+    "id": "augustus:S3:1",
+    "source": "augustus",
+    "section": "augustus:S3",
+    "path": "vault/raw/augustus.html#S3",
+    "text": "He restored the Capitol and sacred buildings to the number of eighty-two, the theatre of Pompey, the aqueducts, the Flaminian Way.",
+    "score": -5.4874688491581045
+  },
+  {
+    "id": "pliny:XLVI:1",
+    "source": "pliny",
+    "section": "pliny:XLVI",
+    "path": "vault/raw/pliny.html#link2H_4_0157",
+    "text": "THE citizens of Nicomedia, Sir, have expended three millions three hundred and twenty-nine sesterces in building an aqueduct; but, not being able to finish it, the works are entirely falling to ruin. They made a second attempt in another place, where they laid out two millions. But this likewise is discontinued; so that, after having been at an immense charge to no purpose, they must still be at a further expense, in order to be accommodated with water. I have examined a fine spring from whence the water may be conveyed over arches (as was attempted in their first design) in such a manner that the higher as well as level and low parts of the city may be supplied. There are still remaining a very few of the old arches; and the square stones, however, employed in the former building, may be used in turning the new arches. I am of opinion part should be raised with brick, as that will be the easier and cheaper material. But that this work may not meet with the same ill-success as the former, it will be necessary to send here an architect, or some one skilled in the construction of this kind of waterworks. And I will venture to say, from the beauty and usefulness of the design, it will be an erection well worthy the splendour of your times.",
+    "score": -3.8602960805698263
+  },
+  {
+    "id": "pliny:XLIII:1",
+    "source": "pliny",
+    "section": "pliny:XLIII",
+    "path": "vault/raw/pliny.html#link2H_4_0154",
+    "text": "You are of opinion it would be proper to establish a company of firemen in Nicomedia, agreeably to what has been practised in several other cities. But it is to be remembered that societies of this sort have greatly disturbed the peace of the province in general, and of those cities in particular. Whatever name we give them, and for whatever purposes they may be founded, they will not fail to form themselves into factious assemblies, however short their meetings may be. It will therefore be safer to provide such machines as are of service in extinguishing fires, enjoining the owners of houses to assist in preventing the mischief from spreading, and, if it should be necessary, to call in the aid of the populace.",
+    "score": -1.5275982127022292
+  }
+]
++ SEARCH_STATUS=0
++ ./wiki ask 'Nicomedia aqueduct'
+Error: Local Gemma unavailable at http://127.0.0.1:11435. Run scripts/start_ollama.sh; download weights explicitly during setup. No cloud fallback. (<urlopen error [Errno 61] Connection refused>)
++ ERROR_STATUS=2
++ .venv/bin/python scripts/network_state.py
++ cat results/offline-20260929T170219/network-after.json
+{
+  "active_nonloopback_ip_interfaces": [
+    "en0"
+  ],
+  "default_route_interface": "en0",
+  "offline": false
+}
++ .venv/bin/python - results/offline-20260929T170219 0 1 0 0 2
+{
+  "exit_codes": {
+    "ingest": 0,
+    "eval": 1,
+    "unit": 0,
+    "stopped_search": 0,
+    "stopped_ask": 2
+  },
+  "network_before": {
+    "active_nonloopback_ip_interfaces": [],
+    "default_route_interface": null,
+    "offline": true
+  },
+  "network_after": {
+    "active_nonloopback_ip_interfaces": [
+      "en0"
+    ],
+    "default_route_interface": "en0",
+    "offline": false
+  },
+  "claim_review": "PENDING independent assessment"
+}
++ set +x
+Offline runner finished. Evidence: results/offline-20260929T170219. Review draft notes with ./wiki review KEY --approve after checking their claims.

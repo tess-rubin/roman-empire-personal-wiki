@@ -1,0 +1,398 @@
+[
+  {
+    "record": "results/runs/20260929T215646-cc492a5e.json",
+    "mode": "ask",
+    "seconds": 17.037838082993403,
+    "python_peak_rss": 36552704,
+    "ollama_peak_process_rss_sum": 2727051264,
+    "minimum_available": 1759625216,
+    "maximum_swap_used": 7281770496,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:06:46.339859-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 4.65203025
+  },
+  {
+    "record": "results/runs/20260929T215658-ff870f6f.json",
+    "mode": "ask",
+    "seconds": 11.664531624992378,
+    "python_peak_rss": 37027840,
+    "ollama_peak_process_rss_sum": 2758049792,
+    "minimum_available": 2269167616,
+    "maximum_swap_used": 7248216064,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:06:58.333099-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.002212959
+  },
+  {
+    "record": "results/runs/20260929T215708-c3cd643f.json",
+    "mode": "ingest-draft",
+    "seconds": 10.090914166998118,
+    "python_peak_rss": 46153728,
+    "ollama_peak_process_rss_sum": 2810855424,
+    "minimum_available": 2266267648,
+    "maximum_swap_used": 7139164160,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:07:08.918423-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.001383625
+  },
+  {
+    "record": "results/runs/20260929T215714-2abef8c4.json",
+    "mode": "ingest-draft",
+    "seconds": 5.349895583989564,
+    "python_peak_rss": 46546944,
+    "ollama_peak_process_rss_sum": 2789523456,
+    "minimum_available": 2116943872,
+    "maximum_swap_used": 7122321408,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:07:14.356559-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.001679583
+  },
+  {
+    "record": "results/runs/20260929T215726-7655d546.json",
+    "mode": "ask",
+    "seconds": 11.940575708984397,
+    "python_peak_rss": 37060608,
+    "ollama_peak_process_rss_sum": 2826878976,
+    "minimum_available": 2113601536,
+    "maximum_swap_used": 7329677312,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:07:26.637934-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.001944125
+  },
+  {
+    "record": "results/runs/20260929T215739-28f7c4fb.json",
+    "mode": "ask",
+    "seconds": 13.141294207947794,
+    "python_peak_rss": 33112064,
+    "ollama_peak_process_rss_sum": 2840330240,
+    "minimum_available": 2118123520,
+    "maximum_swap_used": 7703625728,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:07:39.830372-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.002146333
+  },
+  {
+    "record": "results/runs/20260929T215750-86b127be.json",
+    "mode": "ask",
+    "seconds": 10.509639207972214,
+    "python_peak_rss": 33652736,
+    "ollama_peak_process_rss_sum": 2812444672,
+    "minimum_available": 2119647232,
+    "maximum_swap_used": 7814905856,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:07:50.37844-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.001974667
+  },
+  {
+    "record": "results/runs/20260929T215753-ba1361b0.json",
+    "mode": "ask",
+    "seconds": 2.574727791012265,
+    "python_peak_rss": 28966912,
+    "ollama_peak_process_rss_sum": 2764161024,
+    "minimum_available": 2801352704,
+    "maximum_swap_used": 7193034752,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:07:53.00598-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.001985083
+  },
+  {
+    "record": "results/runs/20260929T215757-5b7a1aba.json",
+    "mode": "chat",
+    "seconds": 4.0503099170164205,
+    "python_peak_rss": 29474816,
+    "ollama_peak_process_rss_sum": 2788261888,
+    "minimum_available": 2860089344,
+    "maximum_swap_used": 6765215744,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:07:57.082126-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.003567958
+  },
+  {
+    "record": "results/runs/20260929T215801-906b038d.json",
+    "mode": "chat",
+    "seconds": 4.6961074999999255,
+    "python_peak_rss": 29474816,
+    "ollama_peak_process_rss_sum": 2792177664,
+    "minimum_available": 2892480512,
+    "maximum_swap_used": 5862457344,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:08:01.816308-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.001989041
+  },
+  {
+    "record": "results/runs/20260929T215804-4eb56fee.json",
+    "mode": "chat",
+    "seconds": 2.4829889580141753,
+    "python_peak_rss": 29540352,
+    "ollama_peak_process_rss_sum": 2754183168,
+    "minimum_available": 2897510400,
+    "maximum_swap_used": 5333843968,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:08:04.343686-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.001758709
+  },
+  {
+    "record": "results/runs/20260929T215805-09f75d7e.json",
+    "mode": "chat",
+    "seconds": 1.4061756250448525,
+    "python_peak_rss": 29065216,
+    "ollama_peak_process_rss_sum": 2693365760,
+    "minimum_available": 2896740352,
+    "maximum_swap_used": 4864081920,
+    "allocation": {
+      "models": [
+        {
+          "name": "gemma4:e2b-it-qat",
+          "model": "gemma4:e2b-it-qat",
+          "size": 1670350109,
+          "digest": "07ea59a474013479c8b6b802bef095c40e964a1d776ba02f264c0e30e1aede0c",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "4.6B",
+            "quantization_level": "Q4_0"
+          },
+          "expires_at": "2026-09-29T22:08:05.761146-07:00",
+          "size_vram": 1670350109,
+          "context_length": 4096
+        }
+      ]
+    },
+    "load_seconds": 0.00151075
+  }
+]

@@ -1,0 +1,20 @@
+.venv/
+.ollama/
+vendor/
+__pycache__/
+*.pyc
+*.docx
+.DS_Store
+.env*
+data/*.sqlite*
+data/*.lock
+vault/.obsidian/workspace*.json
+results/ollama-server.log
+results/model-download.log
+results/private/
+
+# MIT presentation remains a local download; see THIRD_PARTY_NOTICES.md
+vault/raw/tacitus.html
+# Runtime diagnostic logs may contain machine-specific environment values
+results/**/ollama.log
+data/review-backups/

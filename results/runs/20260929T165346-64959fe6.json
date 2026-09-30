@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-09-29T23:53:46.216127+00:00",
+  "execution": "local",
+  "mode": "ingest",
+  "source": "augustus",
+  "sha256": "93e505b75436e0b4af71e35b587ea30fb7fdfefc1174e4b8e9a21f040a4d5675",
+  "staged": [
+    "data/staging/augustan-authority.md",
+    "data/staging/augustan-diplomacy.md",
+    "data/staging/imperial-public-works.md"
+  ],
+  "passages": 8,
+  "wall_seconds": 78.94302983401576,
+  "before": {
+    "time": 1790725947.2880058,
+    "python_rss": 34799616,
+    "system": {
+      "total": 17179869184,
+      "available": 3189800960,
+      "percent": 81.4,
+      "used": 8337686528,
+      "free": 61030400,
+      "active": 3154247680,
+      "inactive": 2969960448,
+      "wired": 5183438848
+    },
+    "swap": {
+      "total": 6442450944,
+      "used": 5210701824,
+      "free": 1231749120,
+      "percent": 80.9,
+      "sin": 1589735948288,
+      "sout": 29624467456
+    },
+    "ollama_processes": [
+      {
+        "pid": 24010,
+        "name": "ollama",
+        "rss": 32505856
+      },
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 9551872
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 10600448
+      }
+    ]
+  },
+  "after": {
+    "time": 1790726026.215013,
+    "python_rss": 24379392,
+    "system": {
+      "total": 17179869184,
+      "available": 2216755200,
+      "percent": 87.1,
+      "used": 8440446976,
+      "free": 72663040,
+      "active": 2142306304,
+      "inactive": 2054340608,
+      "wired": 6298140672
+    },
+    "swap": {
+      "total": 8589934592,
+      "used": 7447248896,
+      "free": 1142685696,
+      "percent": 86.7,
+      "sin": 1595757772800,
+      "sout": 29650780160
+    },
+    "ollama_processes": [
+      {
+        "pid": 24010,
+        "name": "ollama",
+        "rss": 24657920
+      },
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 8241152
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 2277376
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "key": "augustan-authority",
+    "draft_record": "results/runs/20260929T165300-a42da2ac.json",
+    "action": "Editorial revision checked against original sections; original output retained",
+    "path": "vault/wiki/Emperors/Augustan Authority.md"
+  },
+  {
+    "key": "augustan-diplomacy",
+    "draft_record": "results/runs/20260929T165315-c65f0e61.json",
+    "action": "Editorial revision checked against original sections; original output retained",
+    "path": "vault/wiki/Government/Augustan Diplomacy.md"
+  },
+  {
+    "key": "imperial-public-works",
+    "draft_record": "results/runs/20260929T165346-68c890c9.json",
+    "action": "Editorial revision checked against original sections; original output retained",
+    "path": "vault/wiki/Cities/Imperial Public Works.md"
+  },
+  {
+    "key": "great-fire",
+    "draft_record": "results/runs/20260929T165515-907e40cf.json",
+    "action": "Editorial revision checked against original sections; original output retained",
+    "path": "vault/wiki/Cities/Great Fire of Rome.md"
+  }
+]

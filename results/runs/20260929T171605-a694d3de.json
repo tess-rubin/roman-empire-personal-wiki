@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-09-30T00:16:05.809341+00:00",
+  "execution": "local",
+  "mode": "ingest",
+  "source": "pliny",
+  "sha256": "6c45c244c2e553fe8cde038856814442a02d2dd64bf8d9ab221c7e878639ee32",
+  "staged": [
+    "data/staging/provincial-oversight.md",
+    "data/staging/nicomedia.md"
+  ],
+  "passages": 6,
+  "wall_seconds": 49.19930450001266,
+  "before": {
+    "time": 1790727316.444003,
+    "python_rss": 32636928,
+    "system": {
+      "total": 17179869184,
+      "available": 1722810368,
+      "percent": 90.0,
+      "used": 10300784640,
+      "free": 57835520,
+      "active": 1684602880,
+      "inactive": 1506918400,
+      "wired": 8616181760
+    },
+    "swap": {
+      "total": 7516192768,
+      "used": 6468141056,
+      "free": 1048051712,
+      "percent": 86.1,
+      "sin": 1631218155520,
+      "sout": 29919789056
+    },
+    "ollama_processes": [
+      {
+        "pid": 26924,
+        "name": "ollama",
+        "rss": 14073856
+      },
+      {
+        "pid": 26952,
+        "name": "llama-server",
+        "rss": 4363845632
+      },
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 5947392
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 1228800
+      }
+    ]
+  },
+  "after": {
+    "time": 1790727365.8089201,
+    "python_rss": 24805376,
+    "system": {
+      "total": 17179869184,
+      "available": 1916289024,
+      "percent": 88.8,
+      "used": 10288267264,
+      "free": 58867712,
+      "active": 1885487104,
+      "inactive": 1700118528,
+      "wired": 8402780160
+    },
+    "swap": {
+      "total": 7516192768,
+      "used": 6451363840,
+      "free": 1064828928,
+      "percent": 85.8,
+      "sin": 1632429801472,
+      "sout": 29944512512
+    },
+    "ollama_processes": [
+      {
+        "pid": 26924,
+        "name": "ollama",
+        "rss": 17416192
+      },
+      {
+        "pid": 26952,
+        "name": "llama-server",
+        "rss": 4435050496
+      },
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 5931008
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 1032192
+      }
+    ]
+  }
+}

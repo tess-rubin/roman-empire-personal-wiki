@@ -1,0 +1,4 @@
+{
+  "question": "Exactly how many people died in Rome’s fire of 64 CE?",
+  "error": "Invalid response schema: claims must be a list."
+}

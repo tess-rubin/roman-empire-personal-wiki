@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-09-30T05:10:37.436113+00:00",
+  "execution": "local",
+  "mode": "ingest",
+  "source": "augustus",
+  "sha256": "93e505b75436e0b4af71e35b587ea30fb7fdfefc1174e4b8e9a21f040a4d5675",
+  "staged": [],
+  "passages": 8,
+  "wall_seconds": 0.012659667001571506,
+  "before": {
+    "time": 1790745037.4233432,
+    "python_rss": 34193408,
+    "system": {
+      "total": 17179869184,
+      "available": 5790121984,
+      "percent": 66.3,
+      "used": 9142517760,
+      "free": 121225216,
+      "active": 5690245120,
+      "inactive": 5610635264,
+      "wired": 3452272640
+    },
+    "swap": null,
+    "ollama_processes": [],
+    "measurement_errors": [
+      "Process memory unavailable: [Errno 1] Operation not permitted (originated from sysctl(KERN_PROC_ALL))",
+      "swap unavailable: [Errno 1] Operation not permitted"
+    ]
+  },
+  "after": {
+    "time": 1790745037.4360142,
+    "python_rss": 35897344,
+    "system": {
+      "total": 17179869184,
+      "available": 5793333248,
+      "percent": 66.3,
+      "used": 9144631296,
+      "free": 122257408,
+      "active": 5692358656,
+      "inactive": 5611339776,
+      "wired": 3452272640
+    },
+    "swap": null,
+    "ollama_processes": [],
+    "measurement_errors": [
+      "Process memory unavailable: [Errno 1] Operation not permitted (originated from sysctl(KERN_PROC_ALL))",
+      "swap unavailable: [Errno 1] Operation not permitted"
+    ]
+  }
+}

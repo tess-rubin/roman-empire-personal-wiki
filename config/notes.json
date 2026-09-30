@@ -1,0 +1,9 @@
+[
+{"key":"augustan-authority","source":"augustus","title":"Augustan Authority","folder":"Emperors","sections":["34","35"],"related":["Augustan Diplomacy","Imperial Public Works"]},
+{"key":"augustan-diplomacy","source":"augustus","title":"Augustan Diplomacy","folder":"Government","sections":["32","33"],"related":["Augustan Authority"]},
+{"key":"imperial-public-works","source":"augustus","title":"Imperial Public Works","folder":"Cities","sections":["S1","S2","S3","S4"],"related":["Augustan Authority","Rebuilding Rome","Nicomedia Aqueduct"]},
+{"key":"great-fire","source":"tacitus","title":"Great Fire of Rome","folder":"Cities","sections":["38","39","40","41","44"],"related":["Rebuilding Rome"]},
+{"key":"rebuilding","source":"tacitus","title":"Rebuilding Rome","folder":"Cities","sections":["42","43"],"related":["Great Fire of Rome","Imperial Public Works"]},
+{"key":"provincial-oversight","source":"pliny","title":"Provincial Oversight","folder":"Government","sections":["XLII","XLIII","XLIV","XLV"],"related":["Nicomedia Aqueduct"]},
+{"key":"nicomedia","source":"pliny","title":"Nicomedia Aqueduct","folder":"Cities","sections":["XLVI","XLVII"],"related":["Provincial Oversight","Imperial Public Works"]}
+]

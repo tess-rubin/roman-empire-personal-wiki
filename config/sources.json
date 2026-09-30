@@ -1,0 +1,57 @@
+{
+  "augustus": {
+    "file": "augustus.html",
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/6%2A.html",
+    "author": "Augustus; appended summary in third person",
+    "translation": "Frederick W. Shipley, 1924",
+    "title": "Res Gestae 32\u201335 and Summary 1\u20134",
+    "rights": "LacusCurtius identifies this one-asterisk page and the text as public domain. Attribution and page notices retained.",
+    "sections": [
+      "32",
+      "33",
+      "34",
+      "35",
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "sha256": "93e505b75436e0b4af71e35b587ea30fb7fdfefc1174e4b8e9a21f040a4d5675"
+  },
+  "tacitus": {
+    "file": "tacitus.html",
+    "url": "https://classics.mit.edu/Tacitus/annals.11.xv.html",
+    "author": "Tacitus",
+    "translation": "Alfred John Church and William Jackson Brodribb",
+    "title": "Annals XV",
+    "rights": "Historical translation: Church\u2013Brodribb. MIT presentation copyright Daniel C. Stevenson / Web Atomics 1994\u20132009; HTML excluded from Git. Download unchanged directly for local use via scripts/download_sources.py. See THIRD_PARTY_NOTICES.md and archive permissions.",
+    "sections": [
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "sha256": "76f74ae95a06014e38b4728e2d6a43f48a8ef1f3d36e20da759e3ea5ad1023d0"
+  },
+  "pliny": {
+    "file": "pliny.html",
+    "url": "https://www.gutenberg.org/ebooks/2811.html.images",
+    "catalog": "https://www.gutenberg.org/ebooks/2811",
+    "author": "Pliny the Younger and Trajan",
+    "translation": "William Melmoth",
+    "title": "Letters: correspondence with Trajan XLII\u2013XLVII",
+    "rights": "Project Gutenberg ebook 2811; public domain in the USA. Full Gutenberg license and attribution preserved in original; review jurisdiction and redistribution terms.",
+    "sections": [
+      "XLII",
+      "XLIII",
+      "XLIV",
+      "XLV",
+      "XLVI",
+      "XLVII"
+    ],
+    "sha256": "6c45c244c2e553fe8cde038856814442a02d2dd64bf8d9ab221c7e878639ee32"
+  }
+}

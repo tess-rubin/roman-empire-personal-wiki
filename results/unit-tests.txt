@@ -1,0 +1,11 @@
+test_chat_routing_and_context (test_core.SourceTests.test_chat_routing_and_context) ... ok
+test_citation_failures (test_core.SourceTests.test_citation_failures) ... ok
+test_empty_is_not_runtime_error (test_core.SourceTests.test_empty_is_not_runtime_error) ... ok
+test_fts_only_source_evidence (test_core.SourceTests.test_fts_only_source_evidence) ... ok
+test_sections_and_originals (test_core.SourceTests.test_sections_and_originals) ... ok
+test_unavailable_measurements_do_not_abort (test_core.SourceTests.test_unavailable_measurements_do_not_abort) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.117s
+
+OK

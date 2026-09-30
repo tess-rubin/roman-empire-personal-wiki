@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-09-30T00:10:24.135156+00:00",
+  "execution": "local",
+  "mode": "search",
+  "query": "Why did Pliny request an aqueduct specialist for Nicomedia, and what did Trajan require?",
+  "retrieved": [
+    {
+      "id": "pliny:XLVI:1",
+      "source": "pliny",
+      "section": "pliny:XLVI",
+      "path": "vault/raw/pliny.html#link2H_4_0157",
+      "text": "THE citizens of Nicomedia, Sir, have expended three millions three hundred and twenty-nine sesterces in building an aqueduct; but, not being able to finish it, the works are entirely falling to ruin. They made a second attempt in another place, where they laid out two millions. But this likewise is discontinued; so that, after having been at an immense charge to no purpose, they must still be at a further expense, in order to be accommodated with water. I have examined a fine spring from whence the water may be conveyed over arches (as was attempted in their first design) in such a manner that the higher as well as level and low parts of the city may be supplied. There are still remaining a very few of the old arches; and the square stones, however, employed in the former building, may be used in turning the new arches. I am of opinion part should be raised with brick, as that will be the easier and cheaper material. But that this work may not meet with the same ill-success as the former, it will be necessary to send here an architect, or some one skilled in the construction of this kind of waterworks. And I will venture to say, from the beauty and usefulness of the design, it will be an erection well worthy the splendour of your times.",
+      "score": -5.9240012996785225,
+      "attribution": "Pliny writing to Trajan"
+    },
+    {
+      "id": "pliny:XLVII:1",
+      "source": "pliny",
+      "section": "pliny:XLVII",
+      "path": "vault/raw/pliny.html#link2H_4_0158",
+      "text": "CARE must be taken to supply the city of Nicomedia with water; and that business, I am well persuaded, you will perform with all the diligence you ought. But really it is no less incumbent upon you to examine by whose misconduct it has happened that such large sums have been thrown away upon this, lest they apply the money to private purposes, and the aqueduct in question, like the preceding, should be begun, and afterwards left unfinished. You will let me know the result of your inquiry.",
+      "score": -5.8907922292107475,
+      "attribution": "Trajan replying to Pliny"
+    },
+    {
+      "id": "pliny:XLII:1",
+      "source": "pliny",
+      "section": "pliny:XLII",
+      "path": "vault/raw/pliny.html#link2H_4_0153",
+      "text": "WHILE I was making a progress in a different part of the province, a most extensive fire broke out at Nicomedia, which not only consumed several private houses, but also two public buildings; the town-house and the temple of Isis, though they stood on contrary sides of the street. The occasion of its spreading thus far was partly owing to the violence of the wind, and partly to the indolence of the people, who, manifestly, stood idle and motionless spectators of this terrible calamity. The truth is the city was not furnished with either engines, buckets, or any single instrument suitable for extinguishing fires; which I have now however given directions to have prepared. You will consider, Sir, whether it may not be advisable to institute a company of fire-men, consisting only of one hundred and fifty members. I will take care none but those of that business shall be admitted into it, and that the privileges granted them shall not be applied to any other purpose. As this corporate body will be restricted to so small a number of members, it will be easy to keep them under proper regulation.",
+      "score": -3.5237571483849326,
+      "attribution": "Pliny writing to Trajan"
+    },
+    {
+      "id": "pliny:XLIII:1",
+      "source": "pliny",
+      "section": "pliny:XLIII",
+      "path": "vault/raw/pliny.html#link2H_4_0154",
+      "text": "You are of opinion it would be proper to establish a company of firemen in Nicomedia, agreeably to what has been practised in several other cities. But it is to be remembered that societies of this sort have greatly disturbed the peace of the province in general, and of those cities in particular. Whatever name we give them, and for whatever purposes they may be founded, they will not fail to form themselves into factious assemblies, however short their meetings may be. It will therefore be safer to provide such machines as are of service in extinguishing fires, enjoining the owners of houses to assist in preventing the mischief from spreading, and, if it should be necessary, to call in the aid of the populace.",
+      "score": -1.5275982127022292,
+      "attribution": "Trajan replying to Pliny"
+    }
+  ],
+  "retrieval_called": true,
+  "generation_called": false
+}

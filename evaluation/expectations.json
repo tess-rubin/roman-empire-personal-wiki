@@ -1,0 +1,33 @@
+[
+  {
+    "id": "augustus",
+    "question": "According to Augustus, how did his power compare with his colleagues after his sixth and seventh consulships?",
+    "sections": [
+      "augustus:34"
+    ],
+    "expectation": "Distinguish claimed precedence in rank from equal magistrates\u2019 power."
+  },
+  {
+    "id": "nero",
+    "question": "How did Nero help people left homeless by Rome\u2019s fire?",
+    "sections": [
+      "tacitus:39"
+    ],
+    "expectation": "Shelter, temporary accommodation, food supplies, reduced grain price."
+  },
+  {
+    "id": "pliny",
+    "question": "Why did Pliny request an aqueduct specialist for Nicomedia, and what did Trajan require?",
+    "sections": [
+      "pliny:XLVI",
+      "pliny:XLVII"
+    ],
+    "expectation": "Failed projects, technical assistance, investigation of wasted expenditure."
+  },
+  {
+    "id": "unsupported",
+    "question": "Exactly how many people died in Rome\u2019s fire of 64 CE?",
+    "sections": [],
+    "expectation": "Explicit insufficient evidence; no exact death toll."
+  }
+]

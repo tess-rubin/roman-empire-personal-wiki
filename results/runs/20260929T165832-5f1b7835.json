@@ -1,0 +1,90 @@
+{
+  "timestamp": "2026-09-29T23:58:32.950640+00:00",
+  "execution": "local",
+  "mode": "ingest",
+  "source": "tacitus",
+  "sha256": "76f74ae95a06014e38b4728e2d6a43f48a8ef1f3d36e20da759e3ea5ad1023d0",
+  "staged": [
+    "data/staging/rebuilding.md"
+  ],
+  "passages": 10,
+  "wall_seconds": 36.90149883402046,
+  "before": {
+    "time": 1790726276.226722,
+    "python_rss": 35831808,
+    "system": {
+      "total": 17179869184,
+      "available": 1738162176,
+      "percent": 89.9,
+      "used": 9852977152,
+      "free": 66699264,
+      "active": 1688207360,
+      "inactive": 1521172480,
+      "wired": 8164769792
+    },
+    "swap": {
+      "total": 9663676416,
+      "used": 8776843264,
+      "free": 886833152,
+      "percent": 90.8,
+      "sin": 1602812919808,
+      "sout": 29709533184
+    },
+    "ollama_processes": [
+      {
+        "pid": 24010,
+        "name": "ollama",
+        "rss": 6258688
+      },
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 7356416
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 557056
+      }
+    ]
+  },
+  "after": {
+    "time": 1790726312.9502752,
+    "python_rss": 24625152,
+    "system": {
+      "total": 17179869184,
+      "available": 1867186176,
+      "percent": 89.1,
+      "used": 9359441920,
+      "free": 72171520,
+      "active": 1814937600,
+      "inactive": 1626439680,
+      "wired": 7544504320
+    },
+    "swap": {
+      "total": 9663676416,
+      "used": 8684568576,
+      "free": 979107840,
+      "percent": 89.9,
+      "sin": 1605357518848,
+      "sout": 29729865728
+    },
+    "ollama_processes": [
+      {
+        "pid": 24010,
+        "name": "ollama",
+        "rss": 16695296
+      },
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 6127616
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 10829824
+      }
+    ]
+  }
+}

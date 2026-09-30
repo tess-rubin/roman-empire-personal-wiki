@@ -1,0 +1,94 @@
+{
+  "sources": {
+    "augustus": {
+      "sha256": "93e505b75436e0b4af71e35b587ea30fb7fdfefc1174e4b8e9a21f040a4d5675",
+      "sections": [
+        "32",
+        "33",
+        "34",
+        "35",
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "passages": 8
+    },
+    "tacitus": {
+      "sha256": "76f74ae95a06014e38b4728e2d6a43f48a8ef1f3d36e20da759e3ea5ad1023d0",
+      "sections": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "passages": 10
+    },
+    "pliny": {
+      "sha256": "6c45c244c2e553fe8cde038856814442a02d2dd64bf8d9ab221c7e878639ee32",
+      "sections": [
+        "XLII",
+        "XLIII",
+        "XLIV",
+        "XLV",
+        "XLVI",
+        "XLVII"
+      ],
+      "passages": 6
+    }
+  },
+  "notes": {
+    "augustan-authority": {
+      "path": "vault/wiki/Emperors/Augustan Authority.md",
+      "source_sha256": "93e505b75436e0b4af71e35b587ea30fb7fdfefc1174e4b8e9a21f040a4d5675",
+      "draft_record": "results/runs/20260929T165300-a42da2ac.json",
+      "reviewed_sha256": "d81e584ba265f01e49c16da26816bfa87afe2092148370bb61e2a524498e7875",
+      "reviewed_at": 1790726221.033451
+    },
+    "augustan-diplomacy": {
+      "path": "vault/wiki/Government/Augustan Diplomacy.md",
+      "source_sha256": "93e505b75436e0b4af71e35b587ea30fb7fdfefc1174e4b8e9a21f040a4d5675",
+      "draft_record": "results/runs/20260929T165315-c65f0e61.json",
+      "reviewed_sha256": "58fa8badf3e36301f275f503fa18c7d58e3ca40eb44420d9090ca46b4c991264",
+      "reviewed_at": 1790726221.100019
+    },
+    "imperial-public-works": {
+      "path": "vault/wiki/Cities/Imperial Public Works.md",
+      "source_sha256": "93e505b75436e0b4af71e35b587ea30fb7fdfefc1174e4b8e9a21f040a4d5675",
+      "draft_record": "results/runs/20260929T165346-68c890c9.json",
+      "reviewed_sha256": "5c030694434f8dcba6d3db7da6759b3c8bed9b5b7d6b8b94f1f224451b2fd36e",
+      "reviewed_at": 1790726221.127604
+    },
+    "great-fire": {
+      "path": "vault/wiki/Cities/Great Fire of Rome.md",
+      "source_sha256": "76f74ae95a06014e38b4728e2d6a43f48a8ef1f3d36e20da759e3ea5ad1023d0",
+      "draft_record": "results/runs/20260929T165515-907e40cf.json",
+      "reviewed_sha256": "da625006e7057e73bea30a0e35657722b7a525f140b978eedd9434673789276e",
+      "reviewed_at": 1790726221.140459
+    },
+    "rebuilding": {
+      "path": "vault/wiki/Cities/Rebuilding Rome.md",
+      "source_sha256": "76f74ae95a06014e38b4728e2d6a43f48a8ef1f3d36e20da759e3ea5ad1023d0",
+      "draft_record": "results/runs/20260929T165832-ab3f29d8.json",
+      "reviewed_sha256": "8ed48ba8d0adee2860b8b9cc68a5bf77409a3d763ed0158207ce05fa7cd17132",
+      "reviewed_at": 1790726334.545168
+    },
+    "provincial-oversight": {
+      "path": "vault/wiki/Government/Provincial Oversight.md",
+      "source_sha256": "6c45c244c2e553fe8cde038856814442a02d2dd64bf8d9ab221c7e878639ee32",
+      "draft_record": "results/runs/20260929T215708-c3cd643f.json",
+      "reviewed_sha256": "f4f26e1a3144b03cf55f063be769b683b957ed0a508b812b04703ed7b1818e2b",
+      "reviewed_at": 1790744513.9908638
+    },
+    "nicomedia": {
+      "path": "vault/wiki/Cities/Nicomedia Aqueduct.md",
+      "source_sha256": "6c45c244c2e553fe8cde038856814442a02d2dd64bf8d9ab221c7e878639ee32",
+      "draft_record": "results/runs/20260929T215714-2abef8c4.json",
+      "reviewed_sha256": "a1a84b295409db4fe7e53c1a774f813f87d7620ad33871375a956f512621aa60",
+      "reviewed_at": 1790744513.9921
+    }
+  }
+}

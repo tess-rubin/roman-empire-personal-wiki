@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-09-30T04:57:14.417613+00:00",
+  "execution": "local",
+  "mode": "ingest",
+  "source": "pliny",
+  "sha256": "6c45c244c2e553fe8cde038856814442a02d2dd64bf8d9ab221c7e878639ee32",
+  "staged": [
+    "data/staging/provincial-oversight.md",
+    "data/staging/nicomedia.md"
+  ],
+  "passages": 6,
+  "wall_seconds": 15.679355834028684,
+  "before": {
+    "time": 1790744218.744771,
+    "python_rss": 34799616,
+    "system": {
+      "total": 17179869184,
+      "available": 2384936960,
+      "percent": 86.1,
+      "used": 8365146112,
+      "free": 69468160,
+      "active": 2338357248,
+      "inactive": 2208317440,
+      "wired": 6026788864
+    },
+    "swap": {
+      "total": 8589934592,
+      "used": 7139164160,
+      "free": 1450770432,
+      "percent": 83.1,
+      "sin": 1675885314048,
+      "sout": 30356111360
+    },
+    "ollama_processes": [
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 13631488
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 10665984
+      },
+      {
+        "pid": 40367,
+        "name": "ollama",
+        "rss": 26296320
+      },
+      {
+        "pid": 40389,
+        "name": "llama-server",
+        "rss": 2707456000
+      }
+    ]
+  },
+  "after": {
+    "time": 1790744234.417446,
+    "python_rss": 34373632,
+    "system": {
+      "total": 17179869184,
+      "available": 2156724224,
+      "percent": 87.4,
+      "used": 8087748608,
+      "free": 63963136,
+      "active": 2112241664,
+      "inactive": 1994948608,
+      "wired": 5975506944
+    },
+    "swap": {
+      "total": 8589934592,
+      "used": 7118585856,
+      "free": 1471348736,
+      "percent": 82.9,
+      "sin": 1676163629056,
+      "sout": 30357504000
+    },
+    "ollama_processes": [
+      {
+        "pid": 27780,
+        "name": "Ollama",
+        "rss": 10354688
+      },
+      {
+        "pid": 27781,
+        "name": "ollama",
+        "rss": 2637824
+      },
+      {
+        "pid": 40367,
+        "name": "ollama",
+        "rss": 25296896
+      },
+      {
+        "pid": 40389,
+        "name": "llama-server",
+        "rss": 2750840832
+      }
+    ]
+  }
+}

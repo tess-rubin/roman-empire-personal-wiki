@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-09-30T00:19:03.979989+00:00",
+  "execution": "local",
+  "mode": "ask",
+  "question": "What is my museum-trip budget?",
+  "model": "gemma4:e2b-it-qat",
+  "retrieval_called": true,
+  "retrieved": [],
+  "generation_skipped": "empty retrieval",
+  "answer": {
+    "status": "insufficient",
+    "explanation": "No matching original-source passages were found. Try different search terms.",
+    "claims": []
+  },
+  "assessment": {
+    "citation_integrity": "pass",
+    "claim_entailment": "PENDING independent review; formatting and quotes alone do not prove support"
+  },
+  "display": "Insufficient evidence: No matching original-source passages were found. Try different search terms."
+}
